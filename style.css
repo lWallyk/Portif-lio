@@ -22,11 +22,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   min-width: 320px;
   margin: 0;
+  overflow-x: clip;
   color: var(--ink);
   background:
     radial-gradient(circle at 78% 10%, rgba(39, 120, 145, 0.22), transparent 30%),
@@ -1072,6 +1074,15 @@ h1 strong {
     border-bottom: 0;
   }
 
+  .mobile-nav .mobile-whatsapp {
+    margin-top: 8px;
+    color: var(--canvas);
+    background: var(--cyan);
+    border-radius: 10px;
+    font-weight: 800;
+    text-align: center;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
@@ -1096,6 +1107,8 @@ h1 strong {
 
   .section-heading-row {
     align-items: start;
+    flex-direction: column;
+    gap: 24px;
   }
 
   .section-heading-row > p {
