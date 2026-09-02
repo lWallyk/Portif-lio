@@ -824,6 +824,18 @@ h1 strong {
   white-space: nowrap;
 }
 
+.project-live-link {
+  color: var(--canvas);
+  background: var(--cyan);
+  border-color: var(--cyan);
+  font-weight: 800;
+  transition: transform 160ms ease;
+}
+
+.project-live-link:hover {
+  transform: translateY(-2px);
+}
+
 .journey {
   border-top: 1px solid var(--line);
 }
