@@ -1,32 +1,23 @@
-let btnMenu = document.getElementById("btn-menu");
-let menu = document.getElementById("menu-mobile");
-let overlay = document.getElementById("overlay-menu");
+const menuButton = document.querySelector(".menu-toggle");
+const mobileNav = document.querySelector(".mobile-nav");
+const mobileLinks = document.querySelectorAll(".mobile-nav a");
+const year = document.querySelector("#current-year");
 
-btnMenu.addEventListener("click", () => {
-  menu.classList.add("abrir-menu");
+function closeMenu() {
+  menuButton?.setAttribute("aria-expanded", "false");
+  mobileNav?.classList.remove("is-open");
+}
+
+menuButton?.addEventListener("click", () => {
+  const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+  menuButton.setAttribute("aria-expanded", String(!isOpen));
+  mobileNav?.classList.toggle("is-open", !isOpen);
 });
 
-menu.addEventListener("click", () => {
-  menu.classList.remove("abrir-menu");
+mobileLinks.forEach((link) => link.addEventListener("click", closeMenu));
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeMenu();
 });
 
-overlay.addEventListener("click", () => {
-  menu.classList.remove("abrir-menu");
-});
-
-document.querySelectorAll(".smooth-scroll").forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    const targetId = this.getAttribute("href");
-    const target = document.querySelector(targetId);
-
-    if (target) {
-      const offset = target.getBoundingClientRect().top + window.pageYOffset;
-      window.scrollTo({
-        top: offset,
-        behavior: "smooth",
-      });
-    }
-  });
-});
+if (year) year.textContent = String(new Date().getFullYear());
