@@ -1,271 +1,388 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
   <head>
-    <meta charset="utf-8" />
-    <title>Portfólio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Wallyk Santos, estudante de Engenharia da Computação e desenvolvedor com foco em Python e Inteligência Artificial."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Wallyk Santos | Python & Inteligência Artificial" />
+    <meta
+      property="og:description"
+      content="Engenharia da Computação, Python, IA e soluções digitais para problemas reais."
+    />
+    <meta property="og:url" content="https://lwallyk.github.io/Portif-lio/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Wallyk Santos | Python & Inteligência Artificial" />
+    <meta
+      name="twitter:description"
+      content="Engenharia da Computação, Python, IA e soluções digitais para problemas reais."
+    />
+    <meta name="theme-color" content="#08111f" />
+    <title>Wallyk Santos | Python & Inteligência Artificial</title>
     <link rel="stylesheet" href="style.css" />
-    <!---GOOGLE FONTS--->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!---FIM GOOGLE FONTS--->
-    <!--BOOTSTRAP ICONS-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <!-- FIM BOOTSTRAP ICONS-->
-
-    <script src="menu.js" defer></script>
   </head>
   <body>
-    <header>
-      <!---.interface--->
-      <div class="interface">
-        <!----Logo-->
-        <div class="logo">
-          <a href="#">
-            <img src="images/Logo.png" alt="Logo W" />
-          </a>
-        </div>
-        <!----Logo-->
-        <nav class="menu-desktop">
-          <ul>
-            <li><a href="#inicio" class="smooth-scroll">Início</a></li>
-            <li>
-              <a href="#especialidades" class="smooth-scroll">Especialidades</a>
-            </li>
-            <li><a href="#sobre" class="smooth-scroll">Sobre</a></li>
-            <li><a href="#projetos" class="smooth-scroll">Projetos</a></li>
-          </ul>
-        </nav>
-        <!---.btn-contato-->
-        <div class="btn-contato">
-          <a href="https://api.whatsapp.com/send?phone=5511945730755">
-            <button>Contato</button>
-          </a>
-        </div>
-        <!---.btn-contato-->
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-        <div class="btn-abrir-menu" id="btn-menu">
-          <i class="bi bi-list"></i>
-        </div>
-        <!---.btn-abrir-menu-->
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Início">
+        <span class="brand-mark">WS</span>
+        <span class="brand-text">Wallyk Santos</span>
+      </a>
 
-        <div class="menu-mobile" id="menu-mobile">
-          <div class="btn-fechar">
-            <i class="bi bi-x-lg"></i>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#inicio" class="smooth-scroll">Início</a></li>
-              <li>
-                <a href="#especialidades" class="smooth-scroll"
-                  >Especialidades</a
-                >
-              </li>
-              <li><a href="#sobre" class="smooth-scroll">Sobre</a></li>
-              <li><a href="#projetos" class="smooth-scroll">Projetos</a></li>
-              <li><a href="#contato" class="smooth-scroll">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!---fim .menu-mobile-->
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#competencias">Competências</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#trajetoria">Trajetória</a>
+      </nav>
 
-        <div class="overlay-menu" id="overlay-menu"></div>
-        <!---fim .overlay-menu-->
-      </div>
-      <!---.interface--->
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <a class="button button-small button-outline" href="mailto:wallyksantos39@gmail.com">
+        Vamos conversar
+      </a>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação para celular">
+        <a href="#sobre">Sobre</a>
+        <a href="#competencias">Competências</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </header>
 
-    <main>
-      <!---.topo-do-site-->
-      <section class="topo-do-site" id="inicio">
-        <!---.interface-->
-        <div class="interface">
-          <!---.flex-->
-          <div class="flex">
-            <!---.txt-topo-site-->
-            <div class="txt-topo-site">
-              <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
-              <p>
-                Criatividade e inovação andam lado a lado. Com uma combinação
-                única de desing impactante, funcionalidade intuitiva e
-                otimização para resultados, estou pronto(a) para criar a
-                presença online dos seus sonhos.
-              </p>
-              <div class="btn-contato">
-                <a href="https://api.whatsapp.com/send?phone=5511945730755">
-                  <button>Entre em Contato</button>
-                </a>
-              </div>
-            </div>
-            <!---.txt-topo-site-->
-            <!---.img-topo-site-->
-            <div class="img-topo-site">
-              <img src="images/pessoa.png" alt="" />
-            </div>
-            <!---.img-topo-site-->
-          </div>
-          <!---.flex-->
-        </div>
-        <!---.interface-->
-      </section>
-      <!---.topo-do-site-->
+    <main id="conteudo">
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Em busca de oportunidade em desenvolvimento</p>
+          <h1>
+            Transformo problemas reais em
+            <strong>soluções digitais inteligentes.</strong>
+          </h1>
+          <p class="hero-description">
+            Sou estudante de Engenharia da Computação no 10º semestre, com foco em
+            Python e Inteligência Artificial. Uno experiência operacional e visão de
+            negócio para desenvolver tecnologia que realmente ajuda pessoas e empresas.
+          </p>
 
-      <section class="especialidades" id="especialidades">
-        <div class="interface">
-          <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
-          <div class="flex">
-            <div class="especialidades-box">
-              <i class="bi bi-code-square"></i>
-              <h3>Desenvolvimento web</h3>
-              <p></p>
-            </div>
-            <!---.especialidades-box-->
-            <div class="especialidades-box">
-              <i class="bi bi-cart"></i>
-              <h3>Resolução de problemas</h3>
-              <p></p>
-            </div>
-            <!---.especialidades-box-->
-            <div class="especialidades-box">
-              <i class="bi bi-threads-fill"></i>
-              <h3>Aprendizado contínuo</h3>
-              <p></p>
-            </div>
-            <!---.especialidades-box-->
-          </div>
-          <!---.flex-->
-        </div>
-        <!---.interface-->
-      </section>
-      <!---.especialidades-->
-
-      <section class="sobre" id="sobre">
-        <div class="interface">
-          <div class="flex">
-            <div class="img-sobre">
-              <img src="images/foto.png" alt="" />
-            </div>
-            <!--img-sobre-->
-            <div class="txt-sobre">
-              <h2>MUITO PRAZER, <span>SOU WALLYK SANTOS.</span></h2>
-              <p>
-                Sou apaixonado por tecnologia e estou começando minha jornada no
-                campo da tecnologia da informação. Meu objetivo é me tornar um
-                Game Developer e contribuir para criaçãoes inovadoras.
-              </p>
-
-              <p>
-                Tenho habilidades em linguagens como C, C++, Html, Css e Python. Já
-                trabalhei em projetos acadêmicos e pessoais, incluindo um
-                aplicativo de gerenciamento de tarefas ,um site de portfólio e
-                uma API.
-              </p>
-
-              <p>
-                Estou especialmente interessado em desenvolvimento de jogos e
-                aprendizado de máquina, e estou ansioso para explorar essas
-                áreas mais a fundo durante minha carreira em TI.
-              </p>
-
-              <p>
-                Estou procurando oportunidades para aprender e crescer como
-                profissional de TI e estou animado para ver onde minha jornada
-                me levará!
-              </p>
-              <div class="btn-social">
-                <a
-                  href="https://www.instagram.com/wallyk_santos?igsh=MWdwMWxibTY4bXU1Yg=="
-                  ><button><i class="bi bi-instagram"></i></button
-                ></a>
-                <a href="https://www.linkedin.com/in/wallyk-santos-1ab764205/"
-                  ><button><i class="bi bi-linkedin"></i></button
-                ></a>
-                <a href="https://api.whatsapp.com/send?phone=5511945730755"
-                  ><button><i class="bi bi-whatsapp"></i></button
-                ></a>
-              </div>
-              <!--btn-social-->
-            </div>
-            <!---.txt-sobre-->
-          </div>
-          <!---.flex--->
-        </div>
-        <!---.interface-->
-      </section>
-      <!---.sobre-->
-      <section class="portifolio" id="projetos">
-        <div class="interface">
-          <h2 class="titulo">MEU <span>PORTIFÓLIO.</span></h2>
-          <div class="flex">
-            <div
-              class="img-port"
-              style="background-image: url(images/imagem.png)"
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="https://cambaloop.pages.dev/"
+              target="_blank"
+              rel="noreferrer"
             >
-              <div class="overlay">Projeto 1</div>
-            </div>
-            <div
-              class="img-port"
-              style="background-image: url(images/imagem.png)"
+              Conheça o CambaLoop <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="button button-ghost"
+              href="https://github.com/lWallyk"
+              target="_blank"
+              rel="noreferrer"
             >
-              <div class="overlay">Projeto 2</div>
-            </div>
-            <div
-              class="img-port"
-              style="background-image: url(images/imagem.png)"
-            >
-              <div class="overlay">Projeto 3</div>
-            </div>
+              Ver GitHub
+            </a>
           </div>
-          <!---.flex-->
-        </div>
-        <!---.interface-->
-      </section>
-      <!---.portifolio-->
-    </main>
 
-    <footer>
-      <div class="interface">
-        <div class="line-footer">
-          <div class="flex">
-            <div class="logo-footer">
-              <img src="images/Logo.png" alt="" />
-            </div>
-            <!--.logo-footer-->
-            <div class="btn-social">
-              <a
-                href="https://www.instagram.com/wallyk_santos?igsh=MWdwMWxibTY4bXU1Yg=="
-                ><button><i class="bi bi-instagram"></i></button
-              ></a>
-              <a href="www.linkedin.com/in/wallyk-santos-1ab764205"
-                ><button><i class="bi bi-linkedin"></i></button
-              ></a>
-              <a href="https://api.whatsapp.com/send?phone=5511945730755"
-                ><button><i class="bi bi-whatsapp"></i></button
-              ></a>
-            </div>
-            <!--btn-social-->
+          <ul class="hero-facts" aria-label="Destaques profissionais">
+            <li><strong>10º</strong><span>semestre de Engenharia</span></li>
+            <li><strong>Python</strong><span>foco profissional</span></li>
+            <li><strong>1 produto</strong><span>aplicado a uma operação real</span></li>
+          </ul>
+        </div>
+
+        <aside class="hero-panel" aria-label="Resumo do projeto em destaque">
+          <div class="panel-topline">
+            <span>Projeto em destaque</span>
+            <span class="status"><i></i> online</span>
           </div>
-          <!--flex-->
-        </div>
-        <!---.line-footer-->
-
-        <div class="line-footer borda">
+          <div class="product-mark" aria-hidden="true">CL</div>
+          <p class="panel-kicker">Logística + tecnologia</p>
+          <h2>CambaLoop</h2>
           <p>
-            <i class="bi bi-envelope-fill"></i>
-            <a href="mailto:wallyksantos39@gmail.com"
-              >wallyksantos39@gmail.com</a
-            >
+            Sistema de gestão de caçambas com banco de dados, criado como TCC e
+            pensado para apoiar a operação da Ecolix Ambiental.
+          </p>
+          <div class="panel-tags" aria-label="Características do projeto">
+            <span>Aplicação web</span>
+            <span>Banco de dados</span>
+            <span>Autenticação</span>
+          </div>
+          <a href="#projetos">Explorar o projeto <span aria-hidden="true">↓</span></a>
+        </aside>
+      </section>
+
+      <section class="proof-strip" aria-label="Resumo profissional">
+        <p>Engenharia da Computação</p>
+        <span></span>
+        <p>Python & IA</p>
+        <span></span>
+        <p>Experiência administrativa e industrial</p>
+        <span></span>
+        <p>Produtos para problemas reais</p>
+      </section>
+
+      <section class="section about" id="sobre">
+        <div class="section-heading">
+          <p class="section-index">01 / Sobre</p>
+          <h2>Tecnologia com contexto, curiosidade e propósito.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-intro">
+            <p class="lead">
+              Sou Wallyk Santos, estudante do 10º semestre de Engenharia da
+              Computação no Centro Universitário ENIAC, em Guarulhos.
+            </p>
+            <p>
+              Minha trajetória passa pela indústria e pela área administrativa. Essa
+              experiência me ensinou a compreender processos, trabalhar com precisão e
+              olhar para a tecnologia como uma ferramenta para resolver dificuldades do
+              dia a dia — não apenas como código.
+            </p>
+            <p>
+              Hoje direciono meus estudos para Python e Inteligência Artificial e busco
+              minha primeira oportunidade profissional em desenvolvimento, onde eu possa
+              aprender rápido, contribuir com o time e transformar conhecimento em
+              resultados.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <p class="mini-label">Meu jeito de trabalhar</p>
+            <ul>
+              <li><span>01</span><p><strong>Entender antes de construir</strong>Investigo o processo e o problema real.</p></li>
+              <li><span>02</span><p><strong>Aprender continuamente</strong>Estudo novas tecnologias com aplicação prática.</p></li>
+              <li><span>03</span><p><strong>Entregar com responsabilidade</strong>Valorizo organização, clareza e evolução constante.</p></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills" id="competencias">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="section-index">02 / Competências</p>
+            <h2>Uma base técnica em evolução constante.</h2>
+          </div>
+          <p>
+            Meu foco atual está em aprofundar Python e IA, apoiado pela formação em
+            Engenharia da Computação e por conhecimentos em desenvolvimento de sistemas.
           </p>
         </div>
-        <!---.line-footer-->
-      </div>
-      <!---.interface-->
+
+        <div class="skills-grid">
+          <article class="skill-card skill-card-featured">
+            <span class="skill-number">01</span>
+            <div>
+              <p class="skill-label">Foco principal</p>
+              <h3>Python</h3>
+              <p>Desenvolvimento de soluções, automações, lógica e preparação para aplicações de IA.</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <span class="skill-number">02</span>
+            <div>
+              <p class="skill-label">Direção de carreira</p>
+              <h3>Inteligência Artificial</h3>
+              <p>Estudos contínuos de conceitos, ferramentas e possibilidades de aplicação prática.</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <span class="skill-number">03</span>
+            <div>
+              <p class="skill-label">Desenvolvimento</p>
+              <h3>C# e programação</h3>
+              <p>Base em linguagem de programação, orientação a soluções e construção de sistemas.</p>
+            </div>
+          </article>
+          <article class="skill-card skill-card-wide">
+            <span class="skill-number">04</span>
+            <div>
+              <p class="skill-label">Visão complementar</p>
+              <h3>Banco de dados, aplicações web e processos</h3>
+              <p>
+                Experiência acadêmica e prática conectando interfaces, dados, autenticação
+                e necessidades de uma operação real.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects" id="projetos">
+        <div class="section-heading section-heading-row">
+          <div>
+            <p class="section-index">03 / Projetos</p>
+            <h2>Projetos que conectam código e realidade.</h2>
+          </div>
+          <p>
+            Em vez de exercícios genéricos, destaco soluções criadas a partir de desafios
+            que conheci de perto.
+          </p>
+        </div>
+
+        <article class="project-feature">
+          <div class="project-visual" aria-hidden="true">
+            <div class="visual-grid"></div>
+            <div class="visual-brand">Camba<span>Loop</span></div>
+            <div class="visual-route">
+              <span>Solicitação</span><i></i><span>Operação</span><i></i><span>Destino</span>
+            </div>
+            <div class="visual-counter">
+              <strong>01</strong>
+              <span>produto<br />em operação</span>
+            </div>
+          </div>
+
+          <div class="project-copy">
+            <div class="project-topline">
+              <p>Projeto principal · TCC</p>
+              <span class="status"><i></i> Aplicação online</span>
+            </div>
+            <h3>CambaLoop</h3>
+            <p class="project-summary">
+              Aplicação de logística para a gestão de caçambas, desenvolvida como Trabalho
+              de Conclusão de Curso e direcionada às necessidades da Ecolix Ambiental.
+            </p>
+            <dl class="project-details">
+              <div><dt>Desafio</dt><dd>Apoiar e organizar um fluxo operacional de caçambas.</dd></div>
+              <div><dt>Solução</dt><dd>Sistema web com banco de dados, autenticação e painéis por perfil.</dd></div>
+              <div><dt>Valor</dt><dd>Conexão entre conhecimento acadêmico e uma necessidade empresarial real.</dd></div>
+            </dl>
+            <div class="project-footer">
+              <div class="panel-tags">
+                <span>Aplicação web</span><span>Banco de dados</span><span>Autenticação</span>
+              </div>
+              <a
+                class="round-link"
+                href="https://cambaloop.pages.dev/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Abrir aplicação CambaLoop"
+              >↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-secondary">
+          <div>
+            <p class="project-count">02</p>
+            <p class="mini-label">Presença digital</p>
+            <h3>Site institucional da Ecolix Ambiental</h3>
+          </div>
+          <p>
+            Projeto de site criado para apresentar a empresa no ambiente digital,
+            transformando informações do negócio em uma experiência acessível para o público.
+          </p>
+          <span class="project-type">Projeto empresarial</span>
+        </article>
+      </section>
+
+      <section class="section journey" id="trajetoria">
+        <div class="section-heading">
+          <p class="section-index">04 / Trajetória</p>
+          <h2>Experiências diferentes, competências que se complementam.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <p class="timeline-date">Atual</p>
+            <div class="timeline-copy">
+              <p class="mini-label">Ecolix Ambiental</p>
+              <h3>Auxiliar Administrativo</h3>
+              <p>
+                Vivência direta com rotinas administrativas e processos da empresa, contexto
+                que também inspirou o desenvolvimento de soluções como o CambaLoop.
+              </p>
+            </div>
+            <span class="timeline-dot"></span>
+          </article>
+          <article class="timeline-item">
+            <p class="timeline-date">10º semestre</p>
+            <div class="timeline-copy">
+              <p class="mini-label">Centro Universitário ENIAC</p>
+              <h3>Engenharia da Computação</h3>
+              <p>
+                Formação multidisciplinar em tecnologia, desenvolvimento, sistemas e resolução
+                estruturada de problemas.
+              </p>
+            </div>
+            <span class="timeline-dot"></span>
+          </article>
+          <article class="timeline-item">
+            <p class="timeline-date">1 ano e 11 meses</p>
+            <div class="timeline-copy">
+              <p class="mini-label">Experiência industrial</p>
+              <h3>Torneiro CNC</h3>
+              <p>
+                Trabalho técnico que fortaleceu precisão, atenção a detalhes, disciplina,
+                leitura de processos e compromisso com qualidade.
+              </p>
+            </div>
+            <span class="timeline-dot"></span>
+          </article>
+        </div>
+
+        <div class="courses">
+          <div>
+            <p class="mini-label">Formação complementar</p>
+            <h3>Estudos que apoiam minha transição para tecnologia</h3>
+          </div>
+          <ul>
+            <li>Python</li>
+            <li>C#</li>
+            <li>Linguagem de Programação</li>
+            <li>Tecnologias e fundamentos de IA</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact" id="contato">
+        <div class="contact-inner">
+          <p class="section-index">05 / Contato</p>
+          <h2>Vamos construir algo útil juntos?</h2>
+          <p>
+            Estou em busca de oportunidades para iniciar minha carreira em desenvolvimento,
+            crescer com um time e contribuir com soluções em Python e Inteligência Artificial.
+          </p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:wallyksantos39@gmail.com">
+              Enviar e-mail <span aria-hidden="true">↗</span>
+            </a>
+            <a
+              class="button button-ghost"
+              href="https://www.linkedin.com/in/wallyk-santos-1ab764205/"
+              target="_blank"
+              rel="noreferrer"
+            >LinkedIn</a>
+            <a
+              class="button button-ghost"
+              href="https://github.com/lWallyk"
+              target="_blank"
+              rel="noreferrer"
+            >GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark">WS</span>
+        <span class="brand-text">Wallyk Santos</span>
+      </a>
+      <p>Python, Inteligência Artificial e soluções para problemas reais.</p>
+      <p>© <span id="current-year">2026</span> Wallyk Santos</p>
     </footer>
+
+    <script src="menu.js"></script>
   </body>
 </html>
